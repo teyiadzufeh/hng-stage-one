@@ -12,23 +12,6 @@ exports.submit = async (req, res, next) => {
         const current_day = now.toLocaleString(
             'default', {weekday: 'long'}
           );
-        function getCurrentUTCWithinWindow() {
-        const minutesToAdd = Math.floor(Math.random() * 5) - 2; // Random value between -2 and 2
-        now.setMinutes(now.getMinutes() + minutesToAdd);
-        
-        // Get the adjusted UTC time
-        const utcYear = now.getUTCFullYear();
-        const utcMonth = now.getUTCMonth() + 1;
-        const utcDay = now.getUTCDate();
-        const utcHours = now.getUTCHours();
-        const utcMinutes = now.getUTCMinutes();
-        const utcSeconds = now.getUTCSeconds();
-        
-        // Format the time as a string
-        const utcTimeString = `${utcYear}-${String(utcMonth).padStart(2, '0')}-${String(utcDay).padStart(2, '0')}T${String(utcHours).padStart(2, '0')}:${String(utcMinutes).padStart(2, '0')}:${String(utcSeconds).padStart(2, '0')}Z`;
-        
-        return utcTimeString;
-        }
         
         const utc_time = moment.utc().format();
           
