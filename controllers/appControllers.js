@@ -1,4 +1,5 @@
 require('dotenv').config();
+const moment = require("moment");
 
 /**
  * GET /
@@ -29,7 +30,7 @@ exports.submit = async (req, res, next) => {
         return utcTimeString;
         }
         
-        const utc_time = getCurrentUTCWithinWindow();
+        const utc_time = moment.utc().format();
           
         res.json({
             "slack_name": params.slack_name,
