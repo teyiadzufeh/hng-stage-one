@@ -40,6 +40,8 @@ Each route can be found in the [routes/index.js](./routes/index.js) file.
 A Postman Doc has also been created, with further details on each endpoint provided :
 [Teyi Adzufeh's Stage Two Doc](https://documenter.getpostman.com/view/20140877/2s9YC2ytCS)
 
+The UML Diagram for this task can be found in this link: [Teyi Adzufeh's Stage Two UML Diagram](https://drive.google.com/file/d/13IEnQ_NXOnjiG5MiDUD-Qv24m9clpLM4/view?usp=sharing)
+
 ## Author
 
 This project is authored by Teyi Adzufeh.
